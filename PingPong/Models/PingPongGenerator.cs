@@ -6,43 +6,40 @@ namespace PingPong.Models
   public class PingPongGenerator
   {
     private int _number;
-    private int _id;
-    private static int _lastId = 0;
+    // private int _id;
+    // private static int _lastId = 0;
 
-    private static List<PingPongGenerator> _instances = new List<PingPongGenerator> {};
+    private static List<PingPongGenerator> _listNumbers = new List<PingPongGenerator>() {};
 
-    public Contact(int inputNumber)
+    public PingPongGenerator(int Number)
     {
-      _number = inputNumber;
-
+      _number = Number;
     }
 
     public int GetNumber()
     {
       return _number;
     }
-
-    public static GetRange(int num)
+    public void ToReplace()
     {
-      for (var i=0; i<=num.Count; i++)
-      {
-        // to be finished
-      }
-
-    }
-
-    public string ToReplace(int number)
-    {
+      for (var i=0; i<=_number; i++) {
           if (number % 15 == 0)
           {
-            return "ping-pong";
+            _listNumbers.Add("ping-pong");
           } else if (number % 5 == 0) {
-            return "pong";
+            _listNumbers.Add("pong");
           } else if (number % 3 == 0) {
-            return "ping";
+            _listNumbers.Add("ping");
           } else {
-            return "false";
+            _listNumbers.Add(i.ToString());
           }
+      }
     }
+
+    public static List<PingPongGenerator> GetAll()
+    {
+      return _listNumbers;
+    }
+
   }
 }

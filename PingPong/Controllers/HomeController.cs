@@ -13,16 +13,15 @@ namespace PingPong.Controllers
           return View();
         }
 
-        [HttpGet("ping-pong")]
+        [HttpPost("ping-pong")]
         public ActionResult Check()
         {
-          cLeapYear checkLeapYear = new cLeapYear(Int32.Parse(Request.Form["input-year"]));
-
-          checkLeapYear.IsLeapYear();
-
-          return View("Result");
+          int inputNumber = Int.Parse(Request.Form["input-number"]);
+          PingPongGenerator range = new PingPongGenerator(inputNumber);
+          range.ToReplace();
+          List<PingPongGenerator> AllNumbers = PingPongGenerator.GetAll();
+          return View("Result", AllNumbers);
         }
-
 
   }
 }
