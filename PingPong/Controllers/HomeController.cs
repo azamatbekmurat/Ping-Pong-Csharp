@@ -16,7 +16,7 @@ namespace PingPong.Controllers
         [HttpPost("ping-pong")]
         public ActionResult Check()
         {
-          int inputNumber = Int.Parse(Request.Form["input-number"]);
+          int inputNumber = int.Parse(Request.Form["input-number"]);
           PingPongGenerator range = new PingPongGenerator(inputNumber);
           range.ToReplace();
           List<PingPongGenerator> AllNumbers = PingPongGenerator.GetAll();

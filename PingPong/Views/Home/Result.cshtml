@@ -5,12 +5,10 @@
 <div class="container">
   <h2>Result:</h2>
 
-  <p>Your range is:
-    @if (@Model.GetYear().IsLeapYear()) {
-      return "a leap year"
-    } else {
-      return "not a leap year"
+  <ul>Your range is:
+    @foreach (var item in @Model) {
+      <li>@item</li>
     }
-  </p>
+  </ul>
 
 <div>

@@ -23,13 +23,13 @@ namespace PingPong.Models
     public void ToReplace()
     {
       for (var i=0; i<=_number; i++) {
-          if (number % 15 == 0)
+          if (_number % 15 == 0)
           {
             _listNumbers.Add("ping-pong");
-          } else if (number % 5 == 0) {
-            _listNumbers.Add("pong");
-          } else if (number % 3 == 0) {
-            _listNumbers.Add("ping");
+          } else if (_number % 5 == 0) {
+            _listNumbers += i;
+          } else if (_number % 3 == 0) {
+            _listNumbers += "ping";
           } else {
             _listNumbers.Add(i.ToString());
           }
