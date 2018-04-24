@@ -10651,22 +10651,22 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Guest/Desktop/Ping-Pong.Solution/PingPong.Tests/PingPong.Tests.csproj",
+      "projectUniqueName": "/Users/Guest/Desktop/Ping-Pong-Csharp/PingPong.Tests/PingPong.Tests.csproj",
       "projectName": "PingPong.Tests",
-      "projectPath": "/Users/Guest/Desktop/Ping-Pong.Solution/PingPong.Tests/PingPong.Tests.csproj",
-      "outputPath": "/Users/Guest/Desktop/Ping-Pong.Solution/PingPong.Tests/obj/",
+      "projectPath": "/Users/Guest/Desktop/Ping-Pong-Csharp/PingPong.Tests/PingPong.Tests.csproj",
+      "outputPath": "/Users/Guest/Desktop/Ping-Pong-Csharp/PingPong.Tests/obj/",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
       "files": {
-        "lib/netcoreapp1.1/PingPong.Tests.dll": "/Users/Guest/Desktop/Ping-Pong.Solution/PingPong.Tests/bin/placeholder/netcoreapp1.1/PingPong.Tests.dll"
+        "lib/netcoreapp1.1/PingPong.Tests.dll": "/Users/Guest/Desktop/Ping-Pong-Csharp/PingPong.Tests/bin/placeholder/netcoreapp1.1/PingPong.Tests.dll"
       },
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
-            "/Users/Guest/Desktop/Ping-Pong.Solution/PingPong/PingPong.csproj": {
-              "projectPath": "/Users/Guest/Desktop/Ping-Pong.Solution/PingPong/PingPong.csproj"
+            "/Users/Guest/Desktop/Ping-Pong-Csharp/PingPong/PingPong.csproj": {
+              "projectPath": "/Users/Guest/Desktop/Ping-Pong-Csharp/PingPong/PingPong.csproj"
             }
           }
         }

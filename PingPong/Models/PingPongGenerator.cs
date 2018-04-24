@@ -9,7 +9,7 @@ namespace PingPong.Models
     // private int _id;
     // private static int _lastId = 0;
 
-    private static List<PingPongGenerator> _listNumbers = new List<PingPongGenerator>() {};
+    private List<string> _listNumbers = new List<string>() {};
 
     public PingPongGenerator(int Number)
     {
@@ -23,20 +23,24 @@ namespace PingPong.Models
     public void ToReplace()
     {
       for (var i=0; i<=_number; i++) {
-          if (_number % 15 == 0)
+        if (i==0) {
+          _listNumbers.Add(i.ToString());
+        } else {
+          if (i % 15 == 0)
           {
             _listNumbers.Add("ping-pong");
-          } else if (_number % 5 == 0) {
-            _listNumbers += i;
-          } else if (_number % 3 == 0) {
-            _listNumbers += "ping";
+          } else if (i % 5 == 0) {
+            _listNumbers.Add("pong");
+          } else if (i % 3 == 0) {
+            _listNumbers.Add("ping");
           } else {
             _listNumbers.Add(i.ToString());
           }
+        }
       }
     }
 
-    public static List<PingPongGenerator> GetAll()
+    public List<string> GetAll()
     {
       return _listNumbers;
     }

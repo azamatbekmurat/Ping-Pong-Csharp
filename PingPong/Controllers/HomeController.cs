@@ -19,7 +19,7 @@ namespace PingPong.Controllers
           int inputNumber = int.Parse(Request.Form["input-number"]);
           PingPongGenerator range = new PingPongGenerator(inputNumber);
           range.ToReplace();
-          List<PingPongGenerator> AllNumbers = PingPongGenerator.GetAll();
+          List<string> AllNumbers = range.GetAll();
           return View("Result", AllNumbers);
         }
 
